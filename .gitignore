@@ -1,0 +1,51 @@
+# =========================
+# Node / Gulp project ignore
+# =========================
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+.cache/
+.tmp/
+temp/
+logs/
+
+# macOS & system
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# Sass / CSS maps
+*.map
+
+# Optional: exclude compiled assets
+src/css/
+src/js/bundle.js
+
+# Cache bust or temporary files
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# OS junk
+ehthumbs.db
+Icon?
+._*
+.Spotlight-V100
+.Trashes

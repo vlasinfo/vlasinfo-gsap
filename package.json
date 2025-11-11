@@ -1,0 +1,47 @@
+{
+  "name": "gulp-modern-build",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Modern Gulp build system with ESM",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "clean": "gulp clean"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "autoprefixer": "^10.4.15",
+    "babel-loader": "^9.1.0",
+    "browser-sync": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "del": "^7.0.0",
+    "gulp": "^5.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.5",
+    "sharp": "^0.32.0",
+    "webpack": "^5.89.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "keywords": [
+    "gulp",
+    "build",
+    "sass",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "swiper": "^12.0.3"
+  }
+}
