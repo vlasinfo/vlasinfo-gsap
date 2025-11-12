@@ -1,0 +1,10 @@
+// Configuration
+// @use "mixins/rem" as * ;
+
+// Base
+@use "base/variables";
+@use "base/reboot";
+
+// Components
+@use "components/header";
+@use "components/footer";

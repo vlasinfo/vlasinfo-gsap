@@ -1,0 +1,124 @@
+@use "mixins/media-query" as * ;
+@use "mixins/rem" as * ;
+@use "mixins/breakpoints" as * ;
+
+.footer {
+    padding: rem(50px) 0 rem(20px);
+    background-color: #eff1f5;
+    color: var(--color-text);
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(40px);
+
+        @media screen and (max-width:974px) {
+            flex-direction: column;
+            align-items:flex-start;
+        }
+    }
+ 
+    &__logo {
+        max-width: 100%;
+        margin-right: auto;
+
+        @include media-query-min(974px) {
+            max-width: 25%;
+        }         
+
+        @include media-query-min(1348px) {
+            max-width: 50%;
+        }        
+
+        a {
+            max-width: rem(246px);
+            display: block;
+            svg,
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &__title-small {
+        font-weight: 500;
+        font-size: 23px;
+        margin-bottom: 15px;
+        }
+
+    &__col {
+
+        &--list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                font-size: rem(24px);
+                line-height: 100%;
+                font-family: var(--font-inter);
+                font-weight: 500;
+                font-size: 14px;
+                color: #525252;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+
+                    font-family: var(--font-inter);
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #525252;
+                    position: relative;
+
+
+                    &:hover {
+                        color: var(--color-accent);
+                    }
+                }
+                svg {
+                    margin-right: rem(25px);
+                    
+                    @media screen and (max-width:1244px) {
+                        margin-right: rem(10px);
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: rem(20px);                 
+                }
+            }
+        }
+    }
+
+    &__description {
+    }
+
+    &__bottom { 
+        padding-top: rem(20px);
+        border-top: 1px solid #E4E5E8;
+    }
+
+    &__description,
+    &__bottom {
+        margin-top: rem(20px);
+        font-size: rem(14px);
+        line-height: rem(20px);
+        color: #525252;
+
+        a {
+            color: #951457;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

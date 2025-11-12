@@ -1,0 +1,26 @@
+@use "./../mixins/rem" as *;
+
+// Root variables
+$font-size: rem(16px);
+$line-height: rem(24px);
+$container-width-xl: rem(1366px);
+
+:root {
+  --base-font-size: 16px;
+
+  --font-general: 'Gilroy', sans-serif;
+
+  --color-text: #030303;
+  --color-accent: #030303;
+
+  --transition: all 0.24s ease;
+
+  --font-size: #{$font-size};
+  --line-height: #{$line-height};
+  --font-weight: 400;
+
+  --cubic: cubic-bezier(0.42, 0.0, 0.58, 1.0);
+  --cut-size: 30px;
+
+  --container-width-xl: #{$container-width-xl};
+}
