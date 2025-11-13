@@ -6,3 +6,9 @@ $rem-base: 16px !default;
 @function rem($px, $base: $rem-base) {
   @return math.div($px, $base) * 1rem;
 }
+
+$vw-base: 1920px !default;
+
+@function vw($px, $base: $vw-base) {
+  @return math.div($px, $base) * 100vw;
+}

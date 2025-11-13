@@ -1,4 +1,4 @@
-@use "./../mixins/rem" as *;
+@use "./../mixins/rem" as *; 
 
 // Root variables
 $font-size: rem(16px);
@@ -11,7 +11,8 @@ $container-width-xl: rem(1366px);
   --font-general: 'Gilroy', sans-serif;
 
   --color-text: #030303;
-  --color-accent: #030303;
+  --color-accent: #C4EE18;
+  --color-lighter: #B4C3D3;
 
   --transition: all 0.24s ease;
 
@@ -22,5 +23,5 @@ $container-width-xl: rem(1366px);
   --cubic: cubic-bezier(0.42, 0.0, 0.58, 1.0);
   --cut-size: 30px;
 
-  --container-width-xl: #{$container-width-xl};
+  --container-width-lg: #{rem(1366px)};
 }

@@ -18,11 +18,15 @@ html {
 // 2. Root defaults
 body {
   margin: 0;
-  font-family: var(--font-general);
+  font-family: var(--font-general, 'Inter', sans-serif);
   font-size: rem(14px);
   font-weight: 400;
   line-height: rem(22px);
   color: #000;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -132,7 +136,7 @@ a {
   transition: var(--transition); 
 
   &:hover {
-    color: var(--color-accent);
+    color: var(--color-lighter);
   }
 }
 
@@ -322,19 +326,11 @@ progress {
 
 .container {
     width: 100%;
-    max-width: var(--container-width-xl);
+    max-width: var(--container-width-lg);
     margin-left: auto;
     margin-right: auto;
     padding-left: rem(16px);
     padding-right: rem(16px);
-}
-
-header {
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 100%;
-  }
 }
 
 .hide-mobile {
